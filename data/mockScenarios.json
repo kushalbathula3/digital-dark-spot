@@ -1,0 +1,145 @@
+import React, { useState } from 'react';
+import scenarioData from './data/mockScenarios.json';
+
+export default function App() {
+  // Default to the first scenario (Scholarship) so the page is never blank
+  const [selectedScenario, setSelectedScenario] = useState(scenarioData.scenarios[0]);
+  const [checklist, setChecklist] = useState(selectedScenario.verificationChecklist);
+
+  // Switch scenarios when a chip is clicked
+  const handleSelectScenario = (scenarioId) => {
+    const found = scenarioData.scenarios.find((s) => s.id === scenarioId);
+    if (found) {
+      setSelectedScenario(found);
+      setChecklist(found.verificationChecklist);
+    }
+  };
+
+  // Toggle checklist checkbox
+  const toggleChecklistItem = (id) => {
+    setChecklist((prev) =>
+      prev.map((item) =>
+        item.id === id ? { ...item, isCompleted: !item.isCompleted } : item
+      )
+    );
+  };
+
+  return (
+    <div className="min-h-screen bg-slate-950 text-slate-100 p-6 max-w-7xl mx-auto space-y-8">
+      {/* 1. Header & Demo Chips */}
+      <header className="space-y-3">
+        <h1 className="text-3xl font-bold tracking-tight">Digital Dark Spot</h1>
+        <p className="text-slate-400">AI-Assisted Information Gap & Contradiction Detection Engine</p>
+        
+        {/* Clickable Quick-Demo Chips */}
+        <div className="flex gap-2 pt-2">
+          {scenarioData.scenarios.map((scen) => (
+            <button
+              key={scen.id}
+              onClick={() => handleSelectScenario(scen.id)}
+              className={`px-3 py-1.5 rounded-full text-xs font-semibold transition ${
+                selectedScenario.id === scen.id
+                  ? 'bg-blue-600 text-white'
+                  : 'bg-slate-800 text-slate-300 hover:bg-slate-700'
+              }`}
+            >
+              {scen.topic}
+            </button>
+          ))}
+        </div>
+      </header>
+
+      {/* 2. Overview & Topic */}
+      <section className="bg-slate-900 border border-slate-800 rounded-xl p-5 space-y-2">
+        <h2 className="text-xl font-semibold text-blue-400">{selectedScenario.topic}</h2>
+        <p className="text-slate-300 text-sm leading-relaxed">{selectedScenario.overviewSummary}</p>
+      </section>
+
+      {/* 3. Contradiction Matrix (Side-by-Side Comparison) */}
+      <section className="space-y-4">
+        <h2 className="text-xl font-semibold flex items-center gap-2">
+          <span className="h-3 w-3 rounded-full bg-amber-500"></span>
+          Contradiction Matrix
+        </h2>
+        <div className="grid md:grid-cols-2 gap-4">
+          {selectedScenario.contradictions.map((conflict) => (
+            <div key={conflict.id} className="bg-slate-900 border border-amber-900/40 rounded-xl p-5 space-y-3">
+              <div className="flex justify-between items-start">
+                <h3 className="font-semibold text-amber-300">{conflict.field}</h3>
+                <span className="text-xs uppercase px-2 py-0.5 rounded bg-amber-500/10 text-amber-400 border border-amber-500/20">
+                  {conflict.severity}
+                </span>
+              </div>
+              <p className="text-xs text-slate-400">{conflict.description}</p>
+              
+              {/* Claim A vs Claim B */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs">
+                <div className="bg-slate-950 p-3 rounded-lg border border-slate-800 space-y-1">
+                  <div className="font-semibold text-slate-300">{conflict.claimA.sourceTitle}</div>
+                  <p className="text-slate-200">"{conflict.claimA.claim}"</p>
+                </div>
+                <div className="bg-slate-950 p-3 rounded-lg border border-slate-800 space-y-1">
+                  <div className="font-semibold text-slate-300">{conflict.claimB.sourceTitle}</div>
+                  <p className="text-slate-200">"{conflict.claimB.claim}"</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* 4. Information Gaps */}
+      <section className="space-y-4">
+        <h2 className="text-xl font-semibold flex items-center gap-2">
+          <span className="h-3 w-3 rounded-full bg-rose-500"></span>
+          Detected Information Dark Spots (Missing Coverage)
+        </h2>
+        <div className="grid md:grid-cols-2 gap-4">
+          {selectedScenario.informationGaps.map((gap) => (
+            <div key={gap.id} className="bg-slate-900 border border-rose-900/40 rounded-xl p-5 space-y-3">
+              <div className="flex justify-between items-start">
+                <h3 className="font-semibold text-rose-300">{gap.title}</h3>
+                <span className="text-xs px-2 py-0.5 rounded bg-rose-500/10 text-rose-400 border border-rose-500/20">
+                  {gap.badge}
+                </span>
+              </div>
+              <p className="text-xs text-slate-300">{gap.reasoning}</p>
+              <div className="bg-slate-950 p-3 rounded-lg border border-slate-800 text-xs">
+                <span className="text-slate-400 block mb-1">Impact:</span>
+                <span className="text-slate-200">{gap.impact}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* 5. Interactive Verification Checklist */}
+      <section className="bg-slate-900 border border-slate-800 rounded-xl p-5 space-y-4">
+        <h2 className="text-xl font-semibold">Prioritized Verification Checklist</h2>
+        <div className="space-y-2">
+          {checklist.map((item) => (
+            <label
+              key={item.id}
+              className={`flex items-start gap-3 p-3 rounded-lg border cursor-pointer transition ${
+                item.isCompleted
+                  ? 'bg-emerald-950/20 border-emerald-900/50 line-through text-slate-500'
+                  : 'bg-slate-950 border-slate-800 text-slate-200'
+              }`}
+            >
+              <input
+                type="checkbox"
+                checked={item.isCompleted}
+                onChange={() => toggleChecklistItem(item.id)}
+                className="mt-1 h-4 w-4 rounded accent-emerald-500"
+              />
+              <div className="text-xs space-y-0.5">
+                <div className="font-medium">{item.action}</div>
+                <div className="text-slate-400 text-[11px]">{item.instruction}</div>
+              </div>
+            </label>
+          ))}
+        </div>
+      </section>
+    </div>
+  );
+}

@@ -1,0 +1,442 @@
+[
+  {
+    "id": "scholarship-verification",
+    "chipLabel": "National Merit Scholarship Verification",
+    "goalQuestion": "What should I verify before applying for the National Merit Post-Graduate Scholarship 2026?",
+    "category": "Scholarships",
+    "overviewSummary": "Review of the 2026/27 official circular against student guides and educational forums. While entry GPA (3.65+) and deadline are stated, multi-year renewal benchmarks are absent and a severe contradiction exists regarding acceptable income documentation (certified tax returns vs. employer pay slips).",
+    "completenessIndex": {
+      "verifiedPercentage": 68,
+      "darkSpotPercentage": 32
+    },
+    "sources": [
+      {
+        "id": "src-gov-1",
+        "name": "Ministry of Higher Education National Scholarship Gazette",
+        "url": "https://scholarships.gov.in/notices/2026-cycle-guidelines",
+        "domain": "scholarships.gov.in",
+        "status": "verified_official",
+        "ingestedDate": "2026-10-31",
+        "lastUpdatedDate": "2026-08-20",
+        "cycleOrEdition": "2026-2027 Cycle Gazette",
+        "isOfficial": true,
+        "credibilityScore": 98,
+        "summaryExcerpt": "Applicants must possess cumulative GPA of 3.65 or 78% aggregate. Annual family income must not exceed ₹2,50,000 verified exclusively through certified ITR-V acknowledgment or Form 16.",
+        "fullContent": "OFFICIAL GAZETTE ORDER NO. 412/HE-2026.\n1. ELIGIBILITY: Candidate must have secured admission into a recognised post-graduate degree in Science or Engineering with a minimum undergraduate CGPA of 3.65 on a 4.0 scale or 78% aggregate.\n2. FINANCIAL VERIFICATION: Gross household income cannot exceed ₹2.50 Lakhs per annum. Mandatory proof: Certified Income Tax Return (ITR-V acknowledgment for prior two assessment years) or Form 16 from competent revenue authority.\n3. DEADLINE: Final submission on National Scholarship Portal closes December 15, 2026 at 17:00 IST."
+      },
+      {
+        "id": "src-guide-2",
+        "name": "ScholarshipsIndia Student Advisory Portal",
+        "url": "https://scholarshipsindia.edu/merit-guide-2026",
+        "domain": "scholarshipsindia.edu",
+        "status": "third_party_advisory",
+        "ingestedDate": "2026-10-31",
+        "lastUpdatedDate": "2026-09-12",
+        "cycleOrEdition": "2026 Student Handbook",
+        "isOfficial": false,
+        "credibilityScore": 65,
+        "summaryExcerpt": "Advisory claims income limit is relaxed up to ₹5.00 Lakhs for reserved category students and states simple employer salary slips or Tehsildar income affidavits are accepted in lieu of tax forms.",
+        "fullContent": "Everything You Need for National Merit 2026:\nIncome Proof: Many students get stuck here! You do not need formal tax filings. An employer salary certificate with rubber stamp or local Tehsildar affidavit is completely valid for family income up to ₹5.00 Lakhs per annum. Renewal: Renewal is automatic each year provided you do not fail any semester examination."
+      },
+      {
+        "id": "src-forum-3",
+        "name": "University Student Union Discussion Archive",
+        "url": "https://forum.universityunion.org/threads/scholarship-cutoff-dates",
+        "domain": "forum.universityunion.org",
+        "status": "community_forum",
+        "ingestedDate": "2026-10-31",
+        "lastUpdatedDate": "2024-11-15",
+        "cycleOrEdition": "2024 Batch Thread (Archived)",
+        "isOfficial": false,
+        "credibilityScore": 42,
+        "outdatedRisk": "Thread discusses the 2024 cohort cycle. Deadlines and renewal rules are obsolete.",
+        "summaryExcerpt": "Discusses strict cutoff of November 30 and reports that scholars had their stipends cancelled due to undisclosed 3.8 GPA renewal benchmarks in Year 2.",
+        "fullContent": "Posted November 2024: Heads up everyone! The portal closes strictly on November 30 at midnight. Also, watch out for Year 2: several peers had stipends abruptly revoked because the university required maintaining 3.80 GPA and publishing one paper, which was nowhere mentioned on the front portal page!"
+      }
+    ],
+    "facts": [
+      {
+        "id": "fact-1",
+        "category": "Eligibility & Income",
+        "claimText": "Undergraduate academic requirement is established at 3.65 CGPA or 78% aggregate in a recognized STEM program.",
+        "sourceId": "src-gov-1",
+        "sourceName": "Ministry Gazette 2026",
+        "sourceUrl": "https://scholarships.gov.in/notices/2026-cycle-guidelines",
+        "isOfficial": true,
+        "exactQuote": "Candidate must have secured admission into a recognised post-graduate degree in Science or Engineering with a minimum undergraduate CGPA of 3.65 or 78% aggregate.",
+        "paragraphRef": "Gazette Section 1: Academic Standing"
+      },
+      {
+        "id": "fact-2",
+        "category": "Deadlines & Timeline",
+        "claimText": "Official portal closure is scheduled for December 15, 2026 at 17:00 IST.",
+        "sourceId": "src-gov-1",
+        "sourceName": "Ministry Gazette 2026",
+        "sourceUrl": "https://scholarships.gov.in/notices/2026-cycle-guidelines",
+        "isOfficial": true,
+        "exactQuote": "Final submission on National Scholarship Portal closes December 15, 2026 at 17:00 IST.",
+        "paragraphRef": "Gazette Section 3: Deadlines"
+      }
+    ],
+    "gaps": [
+      {
+        "id": "gap-1",
+        "domainCategory": "Renewal Conditions & Multi-Year Retention",
+        "title": "Missing Multi-Year Renewal GPA Benchmark & Credit Hour Threshold",
+        "description": "The official 2026 gazette only defines entry admission rules. It does not state what CGPA or research credits must be maintained in Years 2 and 3 to keep the ₹25,000/month stipend active.",
+        "severity": "critical",
+        "impactExplanation": "Students could budget for a 2-year masters degree only to lose funding after year 1 due to undisclosed academic benchmark conditions.",
+        "missingItems": [
+          "Minimum annual cumulative CGPA retention benchmark for continuing years",
+          "Credit hour and coursework progression rules per semester",
+          "Probationary appeal mechanisms in case of medical leave or advisor transition"
+        ],
+        "suggestedOfficialInquiry": "Email National Scholarship Cell: 'Please provide the official binding circular detailing CGPA thresholds and renewal documentation required for Year 2 continuing tenure.'",
+        "isAddressed": false
+      },
+      {
+        "id": "gap-2",
+        "domainCategory": "Application Channel & Institutional Endorsement",
+        "title": "Undisclosed Institutional Screening vs. Direct Portal Submission",
+        "description": "Sources do not specify whether an applicant can submit their dossier individually or if the university Dean of Student Affairs must furnish an institutional quota endorsement.",
+        "severity": "high",
+        "impactExplanation": "If institutional verification is mandatory prior to portal cutoff, students applying in the final week without college pre-clearance will be rejected.",
+        "missingItems": [
+          "Clarification of candidate self-registration vs. college institutional endorsement",
+          "University-level internal quota limits per department",
+          "Internal college clearance deadline preceding the national portal date"
+        ],
+        "suggestedOfficialInquiry": "Check with university Registrar/Scholarship Cell for internal institutional countersign procedures.",
+        "isAddressed": false
+      },
+      {
+        "id": "gap-3",
+        "domainCategory": "Financial Deductions & Taxation",
+        "title": "Absence of TDS Withholding & Mandatory Hostel Amenity Clauses",
+        "description": "The award states ₹3,00,000 per annum, but fails to indicate whether statutory 10% TDS applies or if university hostel fee deductions are pre-subtracted.",
+        "severity": "medium",
+        "impactExplanation": "Net disposable funds could be 15-20% lower than projected.",
+        "missingItems": [
+          "Applicability of Section 10(16) income tax exemption certificate requirement",
+          "Direct disbursement to student bank account vs. institutional tuition offset"
+        ],
+        "suggestedOfficialInquiry": "Ask the university finance desk: 'Is the scholarship credited gross, or are institute overheads deducted?'",
+        "isAddressed": false
+      }
+    ],
+    "contradictions": [
+      {
+        "id": "conf-income-ceiling",
+        "topic": "Annual Family Income Ceiling & Acceptable Documentation",
+        "severity": "blocking",
+        "summary": "Official Gazette mandates income ≤ ₹2.50 Lakhs verified via official ITR-V tax acknowledgment, while Student Advisory claims an income ceiling of ₹5.00 Lakhs with employer salary slips.",
+        "visualDelta": {
+          "label": "Annual Income Limit Discrepancy",
+          "valueA": "₹8,00,000 / yr (Official Gazette)",
+          "valueB": "₹6,00,000 / yr (Student Portal)"
+        },
+        "rootCauseHypothesis": "Third-party student portals frequently cite obsolete state ceiling limits (₹6,00,000) instead of the revised central statutory order (₹8,00,000).",
+        "claims": [
+          {
+            "sourceId": "src-gov-1",
+            "sourceName": "Ministry of Higher Education Gazette (Official)",
+            "sourceUrl": "https://scholarships.gov.in/notices/2026-cycle-guidelines",
+            "isOfficial": true,
+            "lastUpdated": "2026-08-20",
+            "claimValue": "Income Limit: ₹8,00,000 / yr (ITR-V or Form 16 mandatory)",
+            "exactQuote": "Gross household income cannot exceed ₹8,00,000 per annum. Mandatory proof: Certified Income Tax Return (ITR-V acknowledgment for prior two assessment years) or Form 16.",
+            "highlightDelta": "₹8,00,000 | ITR-V / Form 16"
+          },
+          {
+            "sourceId": "src-guide-2",
+            "sourceName": "ScholarshipsIndia Student Advisory (Third-Party)",
+            "sourceUrl": "https://scholarshipsindia.edu/merit-guide-2026",
+            "isOfficial": false,
+            "lastUpdated": "2026-09-12",
+            "claimValue": "Income Limit: ₹6,00,000 / yr (Salary slip or affidavit valid)",
+            "exactQuote": "You do not need formal tax filings. An employer salary certificate with rubber stamp or local Tehsildar affidavit is completely valid for family income up to ₹6,00,000 per annum.",
+            "highlightDelta": "₹6,00,000 | Salary Slip / Affidavit"
+          }
+        ],
+        "resolutionGuidance": "CRITICAL CONFLICT: Rely strictly on the Ministry Gazette. Submitting employer pay slips instead of formal ITR-V documents will trigger immediate automated portal rejection under 2026 rules.",
+        "resolved": false
+      },
+      {
+        "id": "conf-deadline",
+        "topic": "Final Application Submission Cutoff Date",
+        "severity": "major",
+        "summary": "Current 2026 Gazette sets deadline as December 15, 2026 (17:00 IST), whereas archived forum thread cites November 30.",
+        "visualDelta": {
+          "label": "Portal Closure Cutoff",
+          "valueA": "December 15, 2026 (17:00 IST)",
+          "valueB": "November 30, 2026 (Midnight)"
+        },
+        "rootCauseHypothesis": "Forum post preserves uncurated 2024 academic cycle thread where November 30 was the deadline.",
+        "claims": [
+          {
+            "sourceId": "src-gov-1",
+            "sourceName": "Ministry Gazette 2026",
+            "sourceUrl": "https://scholarships.gov.in/notices/2026-cycle-guidelines",
+            "isOfficial": true,
+            "lastUpdated": "2026-08-20",
+            "claimValue": "December 15, 2026 at 17:00 IST",
+            "exactQuote": "Final submission on National Scholarship Portal closes December 15, 2026 at 17:00 IST.",
+            "highlightDelta": "Dec 15, 2026 at 17:00 IST"
+          },
+          {
+            "sourceId": "src-forum-3",
+            "sourceName": "University Student Union Archive",
+            "sourceUrl": "https://forum.universityunion.org/threads/scholarship-cutoff-dates",
+            "isOfficial": false,
+            "lastUpdated": "2024-11-15",
+            "claimValue": "November 30 at 23:59 IST",
+            "exactQuote": "The portal closes strictly on November 30 at midnight.",
+            "highlightDelta": "Nov 30 at 23:59 IST"
+          }
+        ],
+        "resolutionGuidance": "The November 30 date refers to the 2024 cohort cycle. The active 2026-2027 calendar date is December 15, 2026 at 17:00 IST.",
+        "resolved": false
+      }
+    ],
+    "temporalWarnings": [
+      {
+        "id": "temp-1",
+        "sourceId": "src-forum-3",
+        "sourceName": "University Student Union Archive",
+        "detectedCycle": "2024 Cohort Archive (November 2024)",
+        "currentOperatingCycle": "2026-2027 Active Operating Cycle",
+        "warningType": "past_cycle_risk",
+        "riskDescription": "This source contains operational timelines, server rules, and quota figures that are 2 years out of date and superseded by the 2026 charter.",
+        "remedyAction": "Disregard date references from this forum; cross-verify all timeline checkpoints against the 2026 gazette."
+      }
+    ],
+    "checklist": [
+      {
+        "id": "chk-1",
+        "priority": 1,
+        "category": "Income Documentation",
+        "taskTitle": "Obtain certified ITR-V Tax Acknowledgment from Income Tax Portal",
+        "actionGuidance": "Ensure the ITR-V is for Assessment Years 2025-26 and 2024-25. Do NOT substitute with generic pay slips.",
+        "targetAuthority": "Income Tax Department E-Filing Portal / Family Chartered Accountant",
+        "completed": false
+      },
+      {
+        "id": "chk-2",
+        "priority": 1,
+        "category": "Renewal Criteria",
+        "taskTitle": "Request official written renewal & GPA benchmark addendum",
+        "actionGuidance": "Send a formal inquiry to the scholarship nodal officer for written retention standards for Years 2 and 3.",
+        "targetAuthority": "Ministry of Higher Education National Scholarship Desk (helpdesk-nsp@gov.in)",
+        "completed": false
+      },
+      {
+        "id": "chk-3",
+        "priority": 2,
+        "category": "Institutional Clearance",
+        "taskTitle": "Verify college internal endorsement and quota verification timeline",
+        "actionGuidance": "Inquire with the Dean of Academic Affairs if an internal pre-application must be submitted before December 5, 2026.",
+        "targetAuthority": "Host University Student Welfare / Registrar Office",
+        "completed": false
+      },
+      {
+        "id": "chk-4",
+        "priority": 2,
+        "category": "Timeline & Deadline",
+        "taskTitle": "Confirm submission timezone and server cutoff (Dec 15, 17:00 IST)",
+        "actionGuidance": "Upload all PDF certificates 72 hours in advance to prevent last-minute digital signature validation errors.",
+        "targetAuthority": "National Scholarship Portal Technical Operations Center",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "id": "solar-subsidy-guidelines",
+    "chipLabel": "PM Surya Ghar Solar Subsidy Guidelines",
+    "goalQuestion": "What documents, capacity limits, and technical standards are needed to claim the PM Surya Ghar Solar Subsidy?",
+    "category": "Clean Energy Subsidies",
+    "overviewSummary": "Evaluation of central clean energy ministry directives against solar installer blogs. Major contradiction identified regarding maximum central financial assistance (CFA capped at ₹78,000 for 3kW vs. installer claims of ₹1,08,000). Critical dark spot discovered regarding mandatory bi-directional net meter installation delays.",
+    "completenessIndex": {
+      "verifiedPercentage": 60,
+      "darkSpotPercentage": 40
+    },
+    "sources": [
+      {
+        "id": "solar-gov-1",
+        "name": "Ministry of New & Renewable Energy (MNRE) Notification",
+        "url": "https://mnre.gov.in/schemes/pm-surya-ghar-2026",
+        "domain": "mnre.gov.in",
+        "status": "verified_official",
+        "ingestedDate": "2026-10-31",
+        "lastUpdatedDate": "2026-03-01",
+        "cycleOrEdition": "FY 2026-27 Operational Directives",
+        "isOfficial": true,
+        "credibilityScore": 99,
+        "summaryExcerpt": "Central Financial Assistance (CFA) is capped at ₹30,000 for 1kW, ₹60,000 for 2kW, and a maximum of ₹78,000 for systems 3kW or higher. Inverters must be BIS certified with ALMM compliant solar modules.",
+        "fullContent": "MNRE GAZETTE DIRECTIVE 2026: PM SURYA GHAR MUFT BIJLI YOJANA.\n1. CFA RATES: For residential rooftop solar systems: 1 kW system = ₹30,000; 2 kW system = ₹60,000; 3 kW and above = maximum ₹78,000 cap.\n2. DOMESTIC CONTENT REQUIREMENT (DCR): Solar cells and modules must be procured strictly from Approved List of Models and Manufacturers (ALMM) registered indigenous vendors.\n3. NET METERING: Distribution Company (DISCOM) must inspect and install bi-directional net meter within statutory 15 days of vendor work completion."
+      },
+      {
+        "id": "solar-blog-2",
+        "name": "RooftopSolarPros Vendor & Installer Portal",
+        "url": "https://rooftopsolarpros.in/subsidy-calculator",
+        "domain": "rooftopsolarpros.in",
+        "status": "third_party_advisory",
+        "ingestedDate": "2026-10-31",
+        "lastUpdatedDate": "2026-06-18",
+        "cycleOrEdition": "Installer Marketing Guide",
+        "isOfficial": false,
+        "credibilityScore": 58,
+        "summaryExcerpt": "Installer promises direct customer subsidy up to ₹1,08,000 by combining state clean energy credits with national subsidy, and claims imported Tier-1 panels qualify for full cash back.",
+        "fullContent": "Get Maximum Solar Subsidy in 2026! Install our 5kW premium system and receive up to ₹1,08,000 back directly in your bank account! We use imported high-efficiency monocrystalline panels with 25-year warranty. Subsidy is disbursed immediately upon invoice submission."
+      },
+      {
+        "id": "solar-discom-3",
+        "name": "Regional Power Distribution Corporation Consumer Guide",
+        "url": "https://discom-power.org.in/solar-rooftop-procedures",
+        "domain": "discom-power.org.in",
+        "status": "regulatory_gazette",
+        "ingestedDate": "2026-10-31",
+        "lastUpdatedDate": "2025-10-10",
+        "cycleOrEdition": "2025 Utility Technical Handbook",
+        "isOfficial": true,
+        "credibilityScore": 88,
+        "outdatedRisk": "Published late 2025 under earlier distribution technical handbook; references old inspection formats.",
+        "summaryExcerpt": "Details sanctioned load synchronization and warns that consumer transformer capacity saturation may prevent grid connectivity.",
+        "fullContent": "Section 4: Grid Interconnection. Rooftop solar capacity cannot exceed 80% of sanctioned connected load. If local distribution transformer aggregate solar load exceeds 65% rated capacity, applications are placed on deferred hold pending substation augmentation."
+      }
+    ],
+    "facts": [
+      {
+        "id": "sfact-1",
+        "category": "Financial & Subsidy Cap",
+        "claimText": "Central Financial Assistance has an absolute statutory ceiling of ₹78,000 for residential capacities 3 kW and above.",
+        "sourceId": "solar-gov-1",
+        "sourceName": "MNRE Notification 2026",
+        "sourceUrl": "https://mnre.gov.in/schemes/pm-surya-ghar-2026",
+        "isOfficial": true,
+        "exactQuote": "1 kW system = ₹30,000; 2 kW system = ₹60,000; 3 kW and above = maximum ₹78,000 cap.",
+        "paragraphRef": "MNRE Gazette Section 1: CFA Rates"
+      },
+      {
+        "id": "sfact-2",
+        "category": "Required Documentation",
+        "claimText": "Solar panels must strictly utilize ALMM-listed domestic cells and modules (DCR compliance mandatory).",
+        "sourceId": "solar-gov-1",
+        "sourceName": "MNRE Notification 2026",
+        "sourceUrl": "https://mnre.gov.in/schemes/pm-surya-ghar-2026",
+        "isOfficial": true,
+        "exactQuote": "Solar cells and modules must be procured strictly from Approved List of Models and Manufacturers (ALMM) registered indigenous vendors.",
+        "paragraphRef": "MNRE Gazette Section 2: DCR"
+      }
+    ],
+    "gaps": [
+      {
+        "id": "sgap-1",
+        "domainCategory": "Distribution Transformer Feasibility & Grid Quota",
+        "title": "Absence of Pre-Installation Transformer Capacity Check",
+        "description": "Neither the central application portal nor vendor guides alert homeowners to verify if their neighborhood distribution transformer has reached its 65% solar saturation ceiling before paying vendor booking advances.",
+        "severity": "critical",
+        "impactExplanation": "Homeowners may spend ₹2,00,000 purchasing panels only to be denied net-meter synchronization by the local DISCOM due to transformer overload.",
+        "missingItems": [
+          "Pre-feasibility online check for local DT (Distribution Transformer) spare solar hosting capacity",
+          "Timeline and cost liabilities for utility transformer capacity upgrades",
+          "Contractor refund policy if DISCOM denies net-meter grid connectivity"
+        ],
+        "suggestedOfficialInquiry": "Submit inquiry to local DISCOM Junior Engineer (JE): 'Does DT # (Transformer Code) on my feeder have spare renewable penetration margin under the 65% cap?'",
+        "isAddressed": false
+      },
+      {
+        "id": "sgap-2",
+        "domainCategory": "Sanctioned Connected Load Enhancement",
+        "title": "Unstated Mandatory Electrical Load Upgrade Fees",
+        "description": "If a consumer has a 2kW sanctioned load but installs a 3kW or 5kW solar system, the DISCOM requires an upstream load enhancement with substantial infrastructure development fees.",
+        "severity": "high",
+        "impactExplanation": "Unexpected ₹8,000 - ₹20,000 fees and 45-day inspection delays prior to subsidy release.",
+        "missingItems": [
+          "Fee schedule for sanctioned load increase from 2kW to 5kW",
+          "Requirement for revised electrical inspector safety test report for three-phase meters"
+        ],
+        "suggestedOfficialInquiry": "Ask DISCOM billing office for exact load enhancement charges per kW.",
+        "isAddressed": false
+      }
+    ],
+    "contradictions": [
+      {
+        "id": "conf-subsidy-amount",
+        "topic": "Maximum Subsidy Cap & Imported Panel Eligibility",
+        "severity": "blocking",
+        "summary": "Official Ministry directive limits national subsidy to ₹78,000 with mandatory ALMM/DCR indigenous panels, whereas solar vendor promises ₹1,08,000 with imported panels.",
+        "visualDelta": {
+          "label": "Direct Subsidy Cap & Origin",
+          "valueA": "₹78,000 Cap (Strictly DCR Indigenous)",
+          "valueB": "₹1,08,000 (Imported Panels Permitted)"
+        },
+        "rootCauseHypothesis": "Solar marketing vendors conflate potential future state energy credits with the central CFA grant while disregarding strict DCR domestic procurement bylaws.",
+        "claims": [
+          {
+            "sourceId": "solar-gov-1",
+            "sourceName": "Ministry of New & Renewable Energy (Official)",
+            "sourceUrl": "https://mnre.gov.in/schemes/pm-surya-ghar-2026",
+            "isOfficial": true,
+            "lastUpdated": "2026-03-01",
+            "claimValue": "Max CFA ₹78,000; Imported panels strictly DISQUALIFIED",
+            "exactQuote": "3 kW and above = maximum ₹78,000 cap... modules must be procured strictly from Approved List of Models and Manufacturers (ALMM).",
+            "highlightDelta": "₹78,000 | ALMM Indigenous Required"
+          },
+          {
+            "sourceId": "solar-blog-2",
+            "sourceName": "RooftopSolarPros Vendor (Third-Party)",
+            "sourceUrl": "https://rooftopsolarpros.in/subsidy-calculator",
+            "isOfficial": false,
+            "lastUpdated": "2026-06-18",
+            "claimValue": "Claims ₹1,08,000 payout with imported high-efficiency panels",
+            "exactQuote": "Install our 5kW premium system and receive up to ₹1,08,000 back directly in your bank account! We use imported high-efficiency monocrystalline panels.",
+            "highlightDelta": "₹1,08,000 | Imported Monocrystalline"
+          }
+        ],
+        "resolutionGuidance": "CRITICAL AUDIT WARNING: Using imported solar cells automatically disqualifies the installation from ANY government subsidy. The vendor is misleading consumers by quoting unapproved non-DCR modules.",
+        "resolved": false
+      }
+    ],
+    "temporalWarnings": [
+      {
+        "id": "stemp-1",
+        "sourceId": "solar-discom-3",
+        "sourceName": "Regional DISCOM Utility Handbook",
+        "detectedCycle": "Late 2025 Edition",
+        "currentOperatingCycle": "FY 2026-27 Operational Directives",
+        "warningType": "superseded_policy",
+        "riskDescription": "Inspection and test certificate procedures in this utility manual reflect 2025 legacy protocols that were digitized under the unified national PM Surya Ghar portal.",
+        "remedyAction": "Request current DISCOM online net-metering standard operating procedure (SOP)."
+      }
+    ],
+    "checklist": [
+      {
+        "id": "schk-1",
+        "priority": 1,
+        "category": "Vendor Certification",
+        "taskTitle": "Demand ALMM DCR Certificate and RFID Serial Verification from Vendor",
+        "actionGuidance": "Ensure your contract states that all solar panels carry factory-embedded RFID chips listed on the official MNRE ALMM portal.",
+        "targetAuthority": "Authorized Solar EPC Installer / MNRE ALMM Verification Portal",
+        "completed": false
+      },
+      {
+        "id": "schk-2",
+        "priority": 1,
+        "category": "Grid Interconnection",
+        "taskTitle": "Obtain written Feasibility Clearance from DISCOM before making advance payment",
+        "actionGuidance": "Do not transfer equipment advances until your online National Portal application status shows 'Technical Feasibility Approved'.",
+        "targetAuthority": "Local DISCOM Subdivisional Officer (SDO)",
+        "completed": false
+      },
+      {
+        "id": "schk-3",
+        "priority": 2,
+        "category": "Financial Planning",
+        "taskTitle": "Verify bank account is Aadhaar-seeded for Direct Benefit Transfer (DBT)",
+        "actionGuidance": "Subsidy is paid exclusively through NPCI Aadhaar mapper. Check active status at your bank branch.",
+        "targetAuthority": "Host Bank / NPCI Aadhaar Seeding Portal",
+        "completed": true
+      }
+    ]
+  }
+]
